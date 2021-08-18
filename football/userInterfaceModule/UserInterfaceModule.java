@@ -54,6 +54,8 @@ public class UserInterfaceModule {
 		case(2):{
 			pri.formTeam();
 		}
+		default:
+			System.out.println("Enter valid input");
 		}
 		if(noOfPlayers<11)
 		System.out.println("Do you want to add more y/n");
