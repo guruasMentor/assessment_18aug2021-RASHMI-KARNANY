@@ -7,13 +7,14 @@ import java.util.*;
 
 public class PlayerRepo implements PlayerRepoInterface{
 
-	private static ArrayList<Player>arrD;
+	private static ArrayList<Player>arrD; //Diff array lists for diff category
 	private static ArrayList<Player>arrMf;
 	private static ArrayList<Player>arrF;
 	private static ArrayList<Player>arrGK;
 	@Override
 	public int addPlayer(Player p, String c) {
-		
+		//Either the size should be 11 or the number of category should be 4-3-3-1 
+		//If not then it won't add it.
 		if(arrD.size() + arrMf.size() + arrF.size()+ arrGK.size()==11) {
 			System.out.println("Can't add more members");
 			return 0;
@@ -62,6 +63,7 @@ public class PlayerRepo implements PlayerRepoInterface{
 	@Override
 	public void formTeam() throws TeamNotFormedException {
 		// TODO Auto-generated method stub
+		//Either the team is too small or the individual category is filled, then it will throw Team is not formed!
 		if((arrD.size() + arrMf.size() + arrF.size()+ arrGK.size())<11 || arrD.size()!=4 || arrMf.size()!=3 || arrF.size()!=3 ||arrGK.size()!=1)
 			throw new TeamNotFormedException("You don't have enough people");
 		
