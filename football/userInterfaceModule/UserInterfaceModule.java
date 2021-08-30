@@ -24,7 +24,7 @@ public class UserInterfaceModule {
 	}
 	public static void main(String[] args) throws TeamNotFormedException {
 		String s="y";
-		while(s.equals("y")) { //Mentor Comment: could use s.equalsIgnoreCase()
+		while(s.equals("y")) { // Mentor Comment: could use s.equalsIgnoreCase()
 		System.out.println("Welcome! Please select the action you want to perform");
 		System.out.println("Enter 1 to add players to repo");
 		System.out.println("Enter 2 to form team");
