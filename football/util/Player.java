@@ -5,6 +5,11 @@ public class Player {
 	private String name;
 	
 	private int rank;
+
+	//Mentor Comment: You could add "category" as a field in this class
+
+	// Mentor Comments: Provide overloaded constructors
+
 	public String getName() {
 		return name;
 	}
@@ -17,4 +22,7 @@ public class Player {
 	public void setRank(int rank) {
 		this.rank = rank;
 	}
+
+	// Mentor Comment
+	// Override equals(), hashCode(), toString()
 }
